@@ -1,21 +1,11 @@
 // tailwind css here, and it will be built inside dist/style.css
 import '@/styles/index.css';
 
-import {Plugin} from 'vue';
-import {DvCard, DvCurrentTime} from '@/components';
+import {defineCustomElement} from 'vue';
+import {CurrentTime, Card} from './components';
 
-// global components
-const components = [DvCurrentTime, DvCard];
+const CurrentTimeComponent = defineCustomElement(CurrentTime);
+const CardComponent = defineCustomElement(Card);
 
-export const DvPlugin: Plugin = {
-  install: (app: any, options: any) => {
-    components.forEach((component) => {
-      // Need to define component name
-      app.component(component.name, component);
-      // app.component('DvCurrentTime', DvCurrentTime);
-    });
-  },
-};
-
-// single component that can be imported in SFC
-export {DvCurrentTime, DvCard};
+customElements.define('dv-current-time', CurrentTimeComponent);
+customElements.define('dv-card', CardComponent);

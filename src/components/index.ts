@@ -1,2 +1,2 @@
-export {default as DvCurrentTime} from './current-time.ce.vue';
-export {default as DvCard} from './card.ce.vue';
+export {default as CurrentTime} from './current-time.ce.vue';
+export {default as Card} from './card.ce.vue';

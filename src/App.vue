@@ -5,30 +5,23 @@
     <div>
       <h2 class="text-2xl">Current Time</h2>
       <dv-current-time>
-        <template #prefix>Time is </template>
+        <span slot="prefix">Time is</span>
       </dv-current-time>
     </div>
 
     <div>
       <h2 class="text-2xl">Card</h2>
       <dv-card :is-footer-bordered="true">
-        <template #header>
-          <div>Header</div>
-        </template>
-        <template #body>
-          <div>body</div>
-        </template>
-        <template #footer>
-          <div>footer</div>
-        </template>
-        <div>Header</div>
+        <div slot="header">Header</div>
+        <div slot="body">body</div>
+        <div slot="footer">footer</div>
       </dv-card>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import {DvCurrentTime, DvCard} from './components';
+import '@/index';
 </script>
 
 <style scoped>

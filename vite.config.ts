@@ -9,7 +9,17 @@ export default defineConfig({
       '@/': new URL('./src/', import.meta.url).pathname,
     },
   },
-  plugins: [vue({customElement: true})],
+  plugins: [
+    vue({
+      customElement: true,
+      template: {
+        compilerOptions: {
+          // treat all tags with a dash as custom elements
+          isCustomElement: (tag) => tag.startsWith('dv-'),
+        },
+      },
+    }),
+  ],
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),

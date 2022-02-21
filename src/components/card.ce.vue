@@ -24,7 +24,16 @@ defineProps({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.dv-card {
+  background: yellowgreen;
+  border: 1px solid red;
+}
+
+.border-t {
+  border-top: 1px solid gray;
+}
+</style>
 
 <script lang="ts">
 export default {
