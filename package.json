@@ -1,17 +1,17 @@
 {
-  "name": "@wghglory/dv-ce",
+  "name": "@wghglory/vue-custom-elements-playground",
   "license": "MIT",
   "author": "Guanghui Wang <guanghui-wang@foxmail.com>",
   "version": "0.0.1",
   "files": [
     "dist"
   ],
-  "main": "./dist/dv-ce.umd.js",
-  "module": "./dist/dv-ce.es.js",
+  "main": "./dist/vue-custom-elements-playground.umd.js",
+  "module": "./dist/vue-custom-elements-playground.es.js",
   "exports": {
     ".": {
-      "import": "./dist/dv-ce.es.js",
-      "require": "./dist/dv-ce.umd.js"
+      "import": "./dist/vue-custom-elements-playground.es.js",
+      "require": "./dist/vue-custom-elements-playground.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
@@ -41,7 +41,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wghglory/dv-ce.git"
+    "url": "git+https://github.com/wghglory/vue-custom-elements-playground.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/wghglory"
