@@ -1,6 +1,3 @@
-# A Vue 3 Component Library Starter + Typescript + Vite + Tailwind
+# Vue3.2 Powered Custom Elements Playground
 
-Component List:
-
-- [ ] dv-card
-- [ ] dv-current-time: display the real time
+Learn how to create custom element and build a web component library.
